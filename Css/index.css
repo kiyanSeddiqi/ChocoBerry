@@ -1,0 +1,667 @@
+@import url(../Css/fonts.css);
+
+.product-zone {
+  min-height: 700px;
+  text-align: center;
+  background-image: url("../images/bg-pattern-1.jpg");
+  transition: 1s;
+  padding: 10px 0px;
+}
+
+.image-container {
+  width: 300px;
+  padding: 10px;
+  margin: 8px;
+  height: 400px;
+  background-color: white;
+  border-radius: 8px;
+  font-family: "Gabriela-Regular";
+  letter-spacing: 1px;
+  transition: 1s;
+  box-shadow: 0px 0px 10px #5c5c5c;
+}
+
+.image-container div {
+  position: relative;
+}
+
+.img-1,
+.img-2 {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+  background-repeat: no-repeat;
+  transition: all 0.3s ease;
+}
+
+.image-container .img-2 {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.img-description {
+  width: 90%;
+  border-radius: 4px;
+  margin: 0 auto;
+}
+
+.img-description p {
+  font-size: 14px;
+  padding: 0px 30px;
+  box-sizing: border-box;
+  line-height: 26px;
+}
+
+.image-container:hover .img-2 {
+  opacity: 1;
+}
+
+.img-description span {
+  display: inline-block;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  font-family: "Gabriela-Regular";
+  letter-spacing: 1px;
+  border-bottom: 2px solid #afafaf;
+}
+
+.img-description span a {
+  text-decoration: none;
+  color: #afafaf;
+}
+
+.image-container:hover {
+  scale: 1.02;
+}
+
+.image-container:hover span a {
+  color: rgb(193, 70, 121);
+  border: 2px solid #c14679;
+  padding: 10px;
+}
+
+.about-us {
+  min-height: 500px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.content-1,
+.content2 {
+  width: 30%;
+  height: fit-content;
+  font-family: "Gabriela-Regular";
+  letter-spacing: 1px;
+  margin: 10px;
+}
+
+.heading1 {
+  text-align: right;
+}
+
+.heading2 {
+  text-align: left;
+}
+
+.heading1,
+.heading2 {
+  padding: 15px 10px;
+  margin: 5px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #6b6b6b;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.about-content h4 {
+  margin: 0px;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #000;
+}
+
+.heading-icon img {
+  width: 80px;
+  height: auto;
+  padding: 0px 10px;
+}
+
+.heading-icon img:hover {
+  animation: Logomove 2s infinite;
+}
+
+.about-img {
+  width: 22%;
+  background-image: url("../images/img-9.jpg");
+  background-size: contain;
+  background-position: 15px -10px;
+  background-repeat: no-repeat;
+  margin: 5px 15px;
+}
+
+.team {
+  height: fit-content;
+  padding: 10px;
+  text-align: center;
+  background-image: url("../images/bg-pattern-1.jpg");
+}
+
+.team-content > div {
+  width: 20%;
+  height: 420px;
+  margin: 0px 10px;
+  padding: 10px;
+  font-family: "Gabriela-Regular";
+  letter-spacing: 1px;
+  color: #6b6b6b;
+}
+
+.team-content h4 {
+  margin: 10px 0px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: #000;
+}
+
+.team-content p {
+  font-size: 14px;
+  line-height: 22px;
+  width: 90%;
+  margin: 5px auto;
+  height: 80px;
+}
+
+.team-content img {
+  width: 180px;
+  height: auto;
+  border-radius: 50%;
+  outline: 10px solid white;
+  margin-bottom: 25px;
+  transition: all 0.3s ease;
+  box-shadow: 0px 0px 30px #2a2a2a;
+}
+
+.team-content img:hover {
+  outline: 2px solid #c14679;
+  scale: 1.05;
+}
+
+.social-icon {
+  margin: 0 auto;
+}
+
+.social-icon .fa-brands {
+  color: #000;
+  background-color: #e4e4e4;
+  margin: 0px 8px;
+  width: 38px;
+  height: 38px;
+  line-height: 38px;
+  border-radius: 20px;
+  font-size: 22px;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.social-icon .fa-brands:hover {
+  color: #c14679;
+  border: 1px solid #c14679;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+/* --------- Media query --------- */
+@media screen and (max-width: 1200px) {
+  .btn-order,
+  .btn-product {
+    scale: 0.9;
+  }
+  .title h2 {
+    font-size: 34px;
+  }
+
+  .about-content {
+    align-items: center;
+    height: 300px;
+  }
+  .content-1,
+  .content2 {
+    width: 35%;
+    margin: 0 auto;
+  }
+
+  .heading1,
+  .heading2 {
+    padding: 0px;
+  }
+
+  .about-content h4,
+  .about-content p {
+    font-size: 14px;
+    line-height: 2.2;
+  }
+
+  .about-img {
+    width: 250px;
+    height: 240px;
+    margin: 0px;
+  }
+
+  .heading-icon img {
+    padding-bottom: 10px;
+    scale: 0.8;
+  }
+
+  .team-content > div {
+    height: fit-content;
+  }
+
+  .team-content img {
+    width: 70%;
+    outline: 5px solid white;
+  }
+
+  .social-icon {
+    scale: 0.8;
+    width: 95%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .logo {
+    padding-left: 20px;
+    font-size: 20px;
+  }
+
+  .logo img {
+    scale: 0.9;
+  }
+
+  nav ul li {
+    margin: 0px 20px;
+    font-size: 14px;
+  }
+
+  .header {
+    height: fit-content;
+    min-height: 450px;
+  }
+
+  .header-content {
+    width: 45%;
+    margin: 60px 30px 10px;
+  }
+
+  .header-content h1 {
+    font-size: 42px;
+  }
+
+  .header-content p {
+    font-size: 18px;
+    width: 80%;
+    margin: 10px auto;
+    line-height: 2;
+  }
+
+  .btn-order,
+  .btn-product {
+    scale: 0.7;
+  }
+  .title h2 {
+    font-size: 30px;
+    letter-spacing: 1px;
+  }
+
+  .title h2::before {
+    width: 80px;
+    left: -90px;
+  }
+
+  .title h2::after {
+    width: 80px;
+    right: -90px;
+  }
+
+  .content-1,
+  .content2 {
+    width: 50%;
+    margin: 0 auto;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+
+  .about-content h4,
+  .about-content p {
+    font-size: 14px;
+  }
+
+  .about-img {
+    display: none;
+  }
+
+  .heading-icon img {
+    padding-bottom: 10px;
+    scale: 0.9;
+  }
+
+  .team-content > div {
+    width: 43%;
+    height: fit-content;
+    margin: 10px auto;
+  }
+
+  .team-content img {
+    width: 50%;
+    outline: 5px solid white;
+  }
+
+  .team-content p {
+    width: 100%;
+    margin: 10px auto;
+    font-size: 12px;
+    height: fit-content;
+  }
+
+  .social-icon {
+    scale: 0.8;
+    width: 95%;
+  }
+
+  .social-icon .fa-brands {
+    margin: 0px 5px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .logo {
+    padding-left: 10px;
+    font-size: 18px;
+  }
+  .wavy {
+    padding-bottom: 10px;
+  }
+  .logo img {
+    scale: 0.7;
+  }
+  nav ul {
+    padding-right: 10px;
+    margin-top: 30px;
+  }
+  nav ul li {
+    margin: 0px 15px;
+    font-size: 12px;
+  }
+  .header {
+    background-image: url("../images/beautiful-delicious-dessert.jpg");
+    height: fit-content;
+    min-height: 400px;
+  }
+
+  .header-content {
+    width: 50%;
+    height: fit-content;
+    margin: 60px 10px 10px;
+  }
+
+  .header-content h1 {
+    font-size: 38px;
+    text-shadow: 0px 0px 5px #000000;
+  }
+  .header-content p {
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 2;
+    text-shadow: 0px 0px 5px #ececec;
+    font-weight: bold;
+  }
+
+  .btn-order,
+  .btn-product {
+    scale: 0.6;
+  }
+  .title h2 {
+    font-size: 26px;
+    letter-spacing: 1px;
+  }
+
+  .title h2::before {
+    width: 60px;
+    left: -70px;
+  }
+
+  .title h2::after {
+    width: 60px;
+    right: -70px;
+  }
+  .image-container {
+    max-width: 300px;
+    height: fit-content;
+  }
+  .img-description p {
+    font-size: 12px;
+    padding: 0px 5px;
+    line-height: 1.5;
+  }
+  .img-description span {
+    font-size: 12px;
+  }
+
+  .image img {
+    width: 100%;
+  }
+
+  .about-content {
+    display: block;
+    height: fit-content;
+  }
+
+  .heading1 {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .heading2 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .content-1,
+  .content2 {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .about-content h4,
+  .about-content p {
+    font-size: medium;
+  }
+
+  .about-img {
+    display: none;
+  }
+
+  .heading-icon img {
+    padding-bottom: 10px;
+    scale: 0.9;
+  }
+
+  .team-content > div {
+    width: 43%;
+    height: fit-content;
+    margin: 10px auto;
+  }
+
+  .team-content img {
+    width: 60%;
+    outline: 5px solid white;
+  }
+
+  .team-content p {
+    width: 100%;
+    margin: 10px auto;
+    font-size: 12px;
+    height: fit-content;
+  }
+
+  .social-icon {
+    scale: 0.8;
+    width: 95%;
+  }
+
+  .social-icon .fa-brands {
+    margin: 0px 5px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .menu {
+    height: fit-content;
+    align-items: flex-start;
+  }
+  .logo {
+    padding-left: 10px;
+    font-size: 18px;
+  }
+  .wavy {
+    padding-bottom: 10px;
+  }
+  .logo img {
+    scale: 0.7;
+  }
+  nav ul {
+    display: inline-table;
+    padding-right: 20px;
+    margin-top: 10px;
+  }
+  nav ul li {
+    margin: 15px 0px;
+    font-size: 12px;
+  }
+  .header {
+    background-image: url("../images/blur-bg.jpg");
+    background-size: cover;
+    height: fit-content;
+    justify-content: center;
+  }
+
+  .header-content {
+    width: 80%;
+    height: fit-content;
+    margin: 140px auto 10px;
+  }
+
+  .header-content h1 {
+    font-size: 34px;
+    text-shadow: 0px 0px 5px #000000;
+  }
+  .header-content p {
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 2;
+    text-shadow: 0px 0px 5px #ececec;
+    font-weight: bold;
+  }
+
+  .btn-order,
+  .btn-product {
+    scale: 0.65;
+  }
+
+  .title h2 {
+    font-size: 26px;
+    letter-spacing: 1px;
+  }
+
+  .title h2::before {
+    width: 50px;
+    left: -60px;
+  }
+
+  .title h2::after {
+    width: 50px;
+    right: -60px;
+  }
+  .image-container {
+    max-width: 300px;
+    height: fit-content;
+  }
+  .img-description p {
+    font-size: 12px;
+    padding: 0px 5px;
+    line-height: 1.5;
+  }
+  .img-description span {
+    font-size: 12px;
+  }
+
+  .image img {
+    width: 100%;
+  }
+
+  .about-content {
+    display: block;
+    height: fit-content;
+  }
+
+  .heading1 {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .heading2 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .content-1,
+  .content2 {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .about-content h4,
+  .about-content p {
+    font-size: medium;
+  }
+
+  .about-img {
+    display: none;
+  }
+
+  .heading-icon img {
+    padding-bottom: 10px;
+    scale: 0.9;
+  }
+
+  .team-content > div {
+    width: 45%;
+    height: fit-content;
+    margin: 10px auto;
+  }
+
+  .team-content img {
+    width: 70%;
+    outline: 5px solid white;
+  }
+
+  .team-content p {
+    width: 100%;
+    margin: 10px auto;
+    font-size: 12px;
+    height: fit-content;
+  }
+
+  .social-icon {
+    scale: 0.8;
+    width: 95%;
+  }
+
+  .social-icon .fa-brands {
+    margin: 0px 5px;
+  }
+}

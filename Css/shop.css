@@ -1,0 +1,502 @@
+@import url(../Css/fonts.css);
+
+.shop-header {
+  background-image: url("../images/delicious-dessert.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 600px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.shop-story {
+  height: 200px;
+  background-image: url("../images/bg-pattern-1.jpg");
+}
+
+.story-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
+}
+
+.story-content div {
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  margin: 0px 20px;
+}
+
+.story-content img {
+  width: 100px;
+  height: 100px;
+  outline: 2px solid #c14679;
+  border-radius: 50%;
+  margin-top: 5px;
+  transition: 1s;
+}
+
+.story-content a {
+  text-decoration: none;
+  color: #000;
+}
+
+.story-content img:hover {
+  outline: 2px solid #475872;
+  scale: 1.05;
+}
+
+.story-content h5 {
+  font-size: 14px;
+  margin: 0px;
+  padding-top: 20px;
+  font-family: "Gabriela-Regular";
+  letter-spacing: 2px;
+}
+
+hr {
+  width: 70%;
+  height: 4px;
+  border-radius: 30px;
+  background-image: linear-gradient(to right, #475872 0%, #c14679 51%, #475872 100%);
+  margin: 0px auto;
+}
+
+.main-div {
+  background-image: url("../images/bg-pattern-1.jpg");
+}
+
+.shop-main {
+  width: 80%;
+  margin: 0px auto;
+  padding: 150px 5px 5px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.pr {
+  width: 28%;
+  margin: 100px 10px;
+  height: 480px;
+  text-align: center;
+  font-family: "Gabriela-Regular";
+  line-height: 24px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 5px;
+  box-sizing: border-box;
+  transition: 1s;
+  position: relative;
+}
+
+.pr:hover {
+  box-shadow: 2px 2px 20px #4d4d4d;
+  scale: 1.01;
+}
+
+.pr-img {
+  position: relative;
+  bottom: 110px;
+  box-sizing: border-box;
+}
+
+.pr-img img {
+  width: 70%;
+  height: auto;
+  border-radius: 50%;
+  outline: 2px solid #c14679;
+  transition: all 0.3s ease;
+}
+
+.pr-img img:hover {
+  outline: 2px solid #475872;
+}
+
+.pr-content {
+  position: relative;
+  bottom: 90px;
+  padding: 10px;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+}
+
+.pr-content p {
+  margin: 15px 5px;
+}
+
+.price span {
+  display: inline-block;
+  color: #c14679;
+  letter-spacing: 3px;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.price span:nth-child(2) {
+  display: inline-block;
+  color: #a9a9a9;
+  margin-left: 20px;
+  text-decoration: line-through;
+  letter-spacing: 3px;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.btn-shop {
+  width: 120px;
+  height: 40px;
+  border-radius: 40px;
+  border-style: none;
+  color: white;
+  font-family: "Gabriela-Regular";
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: 0.5s;
+  background-size: 200% auto;
+  background-image: linear-gradient(to right, #475872 0%, #c14679 51%, #475872 100%);
+}
+
+.btn-shop:hover {
+  background-position: right center;
+  box-shadow: 3px 3px 10px #686868;
+}
+
+.star {
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.star span {
+  transition: all 0.2s ease;
+}
+
+.star span:hover {
+  scale: 1.3;
+}
+
+.checked {
+  color: #fcb71b;
+}
+
+/* ------------ media query ----------- */
+@media screen and (max-width: 1200px) {
+  .pr {
+    min-width: 40%;
+    height: 420px;
+    margin: 70px 5px;
+  }
+  .pr-img {
+    bottom: 100px;
+  }
+
+  .pr-img img {
+    width: 60%;
+  }
+
+  .pr-content {
+    font-size: 14px;
+  }
+
+  .pr-content p {
+    margin: 10px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .logo {
+    font-size: 20px;
+  }
+  .wavy {
+    padding-bottom: 5px;
+    letter-spacing: 1px;
+  }
+  .logo img {
+    scale: 0.9;
+  }
+
+  nav ul li {
+    margin: 15px 15px;
+    font-size: 14px;
+  }
+  .shop-header {
+    height: 450px;
+  }
+
+  .header-content {
+    width: 40%;
+    margin: 80px 15px 10px;
+  }
+
+  .header-content h1 {
+    font-size: 42px;
+    text-shadow: 0px 0px 5px #fdfdfd;
+  }
+  .header-content p {
+    font-size: 15px;
+    width: 80%;
+    line-height: 2.5;
+    text-shadow: 0px 0px 3px #000;
+    font-weight: bold;
+    color: #fff;
+    margin: 10px auto;
+  }
+  .shop-story {
+    height: fit-content;
+  }
+  .story-content {
+    flex-wrap: wrap;
+    padding: 10px 0px;
+  }
+  .story-content div {
+    max-width: 75px;
+    margin: 5px 25px;
+    height: fit-content;
+  }
+  .story-content img {
+    width: 70px;
+    height: auto;
+  }
+  .story-content h5 {
+    font-size: 12px;
+    padding-top: 10px;
+    letter-spacing: normal;
+  }
+  .shop-main {
+    padding-top: 60px;
+    width: 95%;
+  }
+
+  .pr {
+    min-width: 30%;
+    height: 380px;
+    margin: 70px 5px;
+  }
+  .pr-img {
+    bottom: 80px;
+  }
+
+  .pr-img img {
+    width: 60%;
+  }
+
+  .pr-content {
+    font-size: 14px;
+  }
+
+  .pr-content p {
+    margin: 10px;
+  }
+
+  .btn-shop {
+    scale: 0.9;
+    margin-top: 5px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .menu {
+    height: fit-content;
+    align-items: flex-start;
+  }
+  .logo {
+    padding-left: 10px;
+    font-size: 18px;
+  }
+  .wavy {
+    padding-bottom: 10px;
+    letter-spacing: 1px;
+  }
+  .logo img {
+    scale: 0.7;
+  }
+  nav ul {
+    padding-right: 20px;
+    margin-top: 20px;
+  }
+  nav ul li {
+    margin: 15px 15px;
+    font-size: 12px;
+  }
+  .shop-header {
+    background-image: url("../images/blur-gb-shop.jpg");
+    background-size: cover;
+    height: fit-content;
+    justify-content: center;
+  }
+
+  .header-content {
+    width: 80%;
+    min-height: 250px;
+    margin: 100px auto 10px;
+  }
+
+  .header-content h1 {
+    font-size: 38px;
+    text-shadow: 0px 0px 5px #fdfdfd;
+  }
+  .header-content p {
+    font-size: 14px;
+    width: 60%;
+    line-height: 2.5;
+    text-shadow: 0px 0px 3px #000;
+    font-weight: bold;
+    color: #fff;
+    margin: 10px auto;
+  }
+  .shop-story {
+    height: fit-content;
+  }
+  .story-content {
+    flex-wrap: wrap;
+    padding: 10px 0px;
+  }
+  .story-content div {
+    max-width: 75px;
+    margin: 5px 25px;
+    height: fit-content;
+  }
+  .story-content img {
+    width: 70px;
+    height: auto;
+  }
+  .story-content h5 {
+    font-size: 12px;
+    padding-top: 10px;
+    letter-spacing: normal;
+  }
+  .shop-main {
+    padding-top: 60px;
+    width: 95%;
+  }
+
+  .pr {
+    width: 45%;
+    height: 400px;
+    margin: 70px 5px;
+  }
+  .pr-img {
+    bottom: 80px;
+  }
+
+  .pr-img img {
+    width: 60%;
+  }
+
+  .pr-content {
+    font-size: 14px;
+  }
+
+  .pr-content p {
+    margin: 10px;
+  }
+
+  .btn-shop {
+    scale: 0.9;
+    margin-top: 5px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .menu {
+    height: fit-content;
+    align-items: flex-start;
+  }
+  .logo {
+    padding-left: 10px;
+    font-size: 18px;
+  }
+  .wavy {
+    padding-bottom: 10px;
+    letter-spacing: normal;
+  }
+  .logo img {
+    scale: 0.7;
+  }
+  nav ul {
+    display: inline-table;
+    padding-right: 20px;
+    margin-top: 10px;
+  }
+  nav ul li {
+    margin: 15px 0px;
+    font-size: 12px;
+  }
+  .shop-header {
+    background-image: url("../images/blur-gb-shop.jpg");
+    background-size: cover;
+    height: fit-content;
+    justify-content: center;
+  }
+
+  .header-content {
+    width: 80%;
+    min-height: 200px;
+    margin: 100px auto 10px;
+  }
+
+  .header-content h1 {
+    font-size: 34px;
+    text-shadow: 0px 0px 5px #fdfdfd;
+  }
+  .header-content p {
+    font-size: 14px;
+    width: 80%;
+    line-height: 2;
+    text-shadow: 0px 0px 3px #000;
+    font-weight: bold;
+    color: #fff;
+    margin: 10px auto;
+  }
+  .shop-story {
+    height: fit-content;
+  }
+  .story-content {
+    flex-wrap: wrap;
+    padding: 10px 0px;
+  }
+  .story-content div {
+    width: 25%;
+    margin: 5px 15px;
+    height: fit-content;
+  }
+  .story-content img {
+    width: 70px;
+    height: auto;
+  }
+  .story-content h5 {
+    font-size: 12px;
+    padding-top: 10px;
+    letter-spacing: 1px;
+  }
+  .shop-main {
+    padding-top: 60px;
+  }
+
+  .pr {
+    width: 300px;
+    height: 400px;
+    margin: 70px 5px;
+  }
+  .pr-img {
+    bottom: 80px;
+  }
+
+  .pr-img img {
+    width: 60%;
+  }
+
+  .pr-content {
+    font-size: 14px;
+  }
+
+  .pr-content p {
+    margin: 10px;
+  }
+
+  .btn-shop {
+    scale: 0.8;
+  }
+}

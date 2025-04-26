@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="cake,cake shop,confectionery,cupcake,wedding cake,fresh,tasty">
+    <meta name="description" content="Choco Berry online cake shop offers the best cakes with fresh ingredients">
+    <meta name="author" content="kiyan seddighi">
+    <title>Account Page</title>
+    <link rel="stylesheet" href="../Css/main.css">
+    <link rel="stylesheet" href="../Css/account.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="../images/icon/user-96.png" sizes="96x96" type="image/x-icon">
+    <link rel="shortcut icon" href="../images/icon/user-96.png" sizes="64x64" type="image/x-icon">
+</head>
+<body>
+             <!-- Menu -->
+    <div class="menu">
+        <div class="logo">
+            <img src="../images/icon/cupcake-96.png" alt="cupcake">
+            <div class="wavy">
+                <span style="--i:1">C</span>
+                <span style="--i:2">h</span>
+                <span style="--i:3">o</span>
+                <span style="--i:4">c</span>
+                <span style="--i:5">o</span>
+                <span style="--i:6">B</span>
+                <span style="--i:7">e</span>
+                <span style="--i:8">r</span>
+                <span style="--i:9">r</span>
+                <span style="--i:10">y</span>
+            </div>
+        </div>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="../pages/index.html"><i class="fa-solid fa-house "></i></a></li>
+                    <li style="font-weight: 700;">&#124;</li>
+                    <li>Account</li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="main-div">
+        <div class="container">
+            <div class="form-content">
+                <div class="sign-up">
+                   <h2>Register</h2>
+                   <form class="acc-form" action="#">
+                       <label for="name">
+                            <img src="../images/icon/user-name.svg" alt="user id"> Name :</label>
+                       <input type="text" name="name" id="name" placeholder="Your name here" required autocomplete="off" pattern="[a-z]+" minlength="3">
+    
+                       <label for="num">
+                            <img src="../images/icon/mobile.svg" alt="cell phone"> Phone Number :</label>
+                       <input type="tel" name="num" id="num" placeholder="Your number here" required autocomplete="off" pattern="[0-9]{11}" min="0">
+    
+                       <label for="password">
+                            <img src="../images/icon/key.svg" alt="lock">
+                        Password :</label>
+                       <input type="password" name="pass" id="password" placeholder="Create password" autocomplete="off" required minlength="8" title="at least 8 character">
+    
+                       <label for="password">
+                            <img src="../images/icon/lock-password.svg" alt="key">
+                        Password Confirm :</label>
+                       <input type="password" name="pass" id="password" placeholder="Repeat password" autocomplete="off" required minlength="8"><br><br>
+    
+                       <input type="checkbox" name="rules" id="rules" required>
+                       <label for="rules"> I have read and agree <br> to the Privacy Policy</label><br><br>
+    
+                       <input class="btn-signup" type="submit" value="Sign up">
+                       
+                   </form>
+                </div>
+    
+                <div class="separator"></div>
+    
+                <div class="login">
+                    <h2>Login</h2>
+                    <form class="acc-form" action="#">
+                       <label for="name">
+                            <img src="../images/icon/user-name.svg" alt="user name">
+                        Name :</label>
+                       <input type="text" name="name" id="name" placeholder="Enter your name" required autocomplete="off" pattern="[a-z]+" minlength="3">
+    
+                       <label for="password">
+                            <img src="../images/icon/key.svg" alt="key">
+                        Password :</label>
+                       <input type="password" name="pass" id="password" placeholder="Enter your password" autocomplete="off" required minlength="8">
+    
+                        <span>
+                            <img src="../images/icon/warning-1.svg" alt="warning">
+                            <a href=""><small> Forgotten password</small></a>
+                        <span>
+    
+                       <label for="mail">
+                            <img src="../images/icon/email.svg" alt="email">
+                        By email :</label>
+                       <input type="email" name="mail" id="mail" placeholder="E-mail address" autocomplete="off"><br><br>
+    
+                       <input class="btn-login" type="submit" value="Continue">
+                    </form>
+                </div>
+            </div>
+            <div class="support">
+                <p>
+                    <img src="../images/icon/question.svg" alt="question">
+                Any Question? <a href="#">Click here</a></p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

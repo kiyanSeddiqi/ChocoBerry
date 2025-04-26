@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'GreatVibes-Regular';
+    src: url('../fonts/GreatVibes-Regular.ttf') format('truetype');
+    src: url('../fonts/GreatVibes-Regular.eot') format('eot');
+    src: url('../fonts/GreatVibes-Regular.woff') format('woff');
+    src: url('../fonts/GreatVibes-Regular.woff2') format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'Gabriela-Regular';
+    src: url('../fonts/Gabriela-Regular.ttf') format('truetype');
+    src: url('../fonts/Gabriela-Regular.eot') format('eot');
+    src: url('../fonts/Gabriela-Regular.woff') format('woff');
+    src: url('../fonts/Gabriela-Regular.woff2') format('woff2');
+  }
+  
+  @font-face {
+    font-family: 'BerkshireSwash';
+    src: url('../fonts/BerkshireSwash-Regular.ttf') format('truetype');
+    src: url('../fonts/BerkshireSwash-Regular.eot') format('eot');
+    src: url('../fonts/BerkshireSwash-Regular.woff') format('woff');
+    src: url('../fonts/BerkshireSwash-Regular.woff2') format('woff2');
+  }

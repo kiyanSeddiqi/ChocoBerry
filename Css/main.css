@@ -1,0 +1,451 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.product-content,
+.about-content,
+.team-content,
+.footer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.menu {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+}
+
+.logo {
+  padding-left: 30px;
+  display: flex;
+  align-items: flex-end;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.wavy span {
+  margin-bottom: 0px;
+  font-family: "GreatVibes-Regular", cursive;
+  position: relative;
+  display: inline-block;
+  font-weight: 700;
+  letter-spacing: -4px;
+}
+
+.wavy:hover span {
+  animation: waviy 1.5s infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes waviy {
+  0%,
+  40%,
+  100% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-10px);
+  }
+}
+
+.logo img {
+  width: 64px;
+  height: auto;
+  position: relative;
+}
+
+.logo img:hover {
+  animation: Logomove 2s infinite;
+}
+
+@keyframes Logomove {
+  0%,
+  5% {
+    transform: rotateZ(0);
+  }
+  10% {
+    transform: rotateZ(10deg);
+  }
+  20% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(10deg);
+  }
+  40% {
+    transform: rotateZ(-5deg);
+  }
+  50% {
+    transform: rotateZ(5deg);
+  }
+  60%,
+  100% {
+    transform: rotateZ(0);
+  }
+}
+
+nav ul {
+  display: flex;
+  padding-right: 40px;
+  margin-top: 45px;
+}
+
+nav ul li {
+  list-style-type: none;
+  margin: 0px 35px;
+  font-family: "Gabriela-Regular";
+}
+
+nav li .fa-solid {
+  font-size: inherit;
+}
+
+nav li a:hover {
+  color: #c14679;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #000;
+  transition: all 0.3s ease;
+}
+
+.header {
+  background-image: url("../images/beautiful-delicious-dessert.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 700px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header-content {
+  width: 425px;
+  height: fit-content;
+  padding: 5px;
+  margin: 80px 70px 5px 0px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.header-content h1 {
+  font-size: 56px;
+  font-family: "BerkshireSwash";
+  margin-bottom: 0px;
+  letter-spacing: 0.01em;
+  color: #c14679;
+  transition-duration: 1s;
+  text-align: center;
+}
+
+.header-content h1:hover {
+  scale: 1.05;
+  text-shadow: 2px 2px 4px #4d4d4d;
+}
+
+.header-content p {
+  font-size: 22px;
+  letter-spacing: 2px;
+  font-family: "Gabriela-Regular";
+  line-height: 44px;
+  text-transform: capitalize;
+}
+
+.btn-order,
+.btn-product {
+  width: 170px;
+  height: 60px;
+  border-style: none;
+  border-radius: 8px;
+  transition: 0.5s;
+  font-family: "Gabriela-Regular";
+  letter-spacing: 2px;
+  margin: 10px 5px;
+  background-color: #c14679;
+}
+
+.btn-order a,
+.btn-product a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 0px 5px;
+}
+
+*:not(img)::selection {
+  background-color: #c14679;
+  color: white;
+}
+
+.title h2 {
+  font-size: 40px;
+  font-family: "BerkshireSwash";
+  letter-spacing: 3px;
+  position: relative;
+  display: inline-block;
+  margin: 50px 0px;
+}
+
+.title h2::before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 5px;
+  background: #c14679;
+  left: -120px;
+  top: 50%;
+  position: absolute;
+  border-radius: 5px;
+}
+
+.title h2::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 5px;
+  background: #c14679;
+  right: -120px;
+  top: 50%;
+  position: absolute;
+  border-radius: 5px;
+}
+
+/* --------footer------- */
+
+.footer {
+  min-height: 300px;
+  padding-top: 20px;
+  text-align: center;
+  line-height: 25px;
+  display: flex;
+  background-image: url("../images/bg-pattern-1.jpg");
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer > div {
+  width: 30%;
+  margin: 5px;
+  padding: 10px;
+  height: 280px;
+  font-family: "Gabriela-Regular";
+  letter-spacing: 1px;
+  border-right: 3px solid #c14679;
+  border-left: 3px solid #c14679;
+  border-width: 3px;
+  border-radius: 10%;
+}
+
+.footer h5 {
+  font-size: 18px;
+  color: #c14679;
+  margin-top: 0px;
+}
+
+.contact-info li:hover,
+.contact-media li:hover {
+  color: #c14679;
+}
+
+.work-list li,
+.contact-info li,
+.contact-media li {
+  list-style: none;
+  margin: 30px 0px;
+  text-align: center;
+}
+
+.work-list,
+.contact-info,
+.contact-media {
+  padding-left: 0px;
+}
+
+.contact-info .fa-solid {
+  font-size: inherit;
+}
+
+.contact-media {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+  height: 30px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.contact-media li {
+  font-size: 20px;
+}
+
+.subscribe input {
+  height: 30px;
+  margin: 10px 0px;
+  width: 165px;
+  border-radius: 5px 0px 0px 5px;
+  border-color: #dbdbdb;
+  border-style: ridge;
+  outline: none;
+  font-family: "Gabriela-Regular";
+  text-indent: 15px;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #c14679;
+}
+
+.btn-news {
+  color: #fff;
+  background-color: #c14679;
+  width: 80px;
+  height: 35px;
+  border-style: none;
+  border-radius: 0px 5px 5px 0px;
+  font-family: "Gabriela-Regular";
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+textarea {
+  width: 244px;
+  border-radius: 5px;
+  font-family: "Gabriela-Regular";
+  outline: none;
+  border-color: #dbdbdb;
+  border-style: ridge;
+  text-indent: 15px;
+  font-size: 14px;
+  padding-top: 5px;
+}
+
+.btn-top a {
+  font-size: 40px;
+  border: none;
+  border-style: none;
+  color: #c14679;
+}
+
+.btn-top {
+  background-image: url("../images/bg-pattern-1.jpg");
+}
+
+@media screen and (max-width: 1200px) {
+  .footer > div {
+    width: 28%;
+    height: 270px;
+  }
+
+  .contact-info li,
+  .subscribe p,
+  .work-list li {
+    font-size: 14px;
+    margin: 25px 0px;
+  }
+
+  .contact-media li {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .footer > div {
+    width: 28%;
+    height: 270px;
+  }
+
+  .contact-info li,
+  .subscribe p,
+  .work-list li {
+    font-size: 14px;
+    margin: 25px 0px;
+  }
+
+  .contact-media li {
+    font-size: 18px;
+  }
+  .subscribe input {
+    width: 55%;
+  }
+
+  textarea {
+    width: 82%;
+    margin: 10px auto;
+  }
+
+  .btn-news {
+    width: 60px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer > div {
+    width: 43%;
+    height: 255px;
+  }
+  .contact-info li,
+  .subscribe p,
+  .work-list li {
+    font-size: 14px;
+    margin: 20px 0px;
+  }
+
+  .contact-media li {
+    font-size: 16px;
+  }
+
+  .subscribe input {
+    width: 55%;
+  }
+
+  textarea {
+    width: 78%;
+    margin: 10px auto;
+  }
+
+  .btn-news {
+    width: 60px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .footer > div {
+    width: 70%;
+    height: fit-content;
+  }
+
+  .contact-info li,
+  .subscribe p,
+  .work-list li {
+    font-size: 14px;
+    margin: 20px 0px;
+  }
+
+  .contact-media li {
+    font-size: 16px;
+  }
+
+  .subscribe input {
+    width: 70%;
+    margin: 10px auto;
+    display: block;
+    border-radius: 5px;
+  }
+
+  textarea {
+    width: 70%;
+    margin: 10px auto;
+  }
+
+  .btn-news {
+    width: 80px;
+    border-radius: 5px;
+  }
+}
